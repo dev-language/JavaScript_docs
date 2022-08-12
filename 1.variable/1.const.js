@@ -1,19 +1,18 @@
-
-// let 재할당 가능한 
-let name = "서근";
+// let 재할당 가능한
+let name = '서근';
 console.log(name);
-name = "미진";
+name = '미진';
 console.log(name);
 
-// const 재할당이 불가능한 
+// const 재할당이 불가능한
 // 1.  상수
 // 2. 상수변수 혹은 변수
-const seogun = "서근";
+const seogun = '서근';
 console.log('seogun:', seogun);
 console.clear();
 
 // 상수
-const SEOGUNS_MACPRO = "소유자: 서근";
+const SEOGUNS_MACPRO = '소유자: 서근';
 console.log(SEOGUNS_MACPRO);
 // SEOGUNS_MACPRO = "소유자: 미진"; //TypeError: Assignment to constant variable.
 
