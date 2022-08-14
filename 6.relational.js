@@ -1,4 +1,4 @@
-// 비소 관계 연산자 (Relational operators)
+// 비교 관계 연산자 (Relational operators)
 
 // > 크다
 // < 작다
