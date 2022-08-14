@@ -33,6 +33,6 @@ console.log(b); //1
 console.log(c); //1
 
 b = 0;
-c = b++;
+c = b++;    
 console.log(b); //1
 console.log(c); //0
