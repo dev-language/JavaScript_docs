@@ -2,6 +2,7 @@
 // if(조건) {}
 // if(조건) {} else {}
 // if(조건1) {} else if(조건2) {} else {}
+// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/if...else
 
 //조건문 if 안에는 false가 들어가면 안된다.
 
