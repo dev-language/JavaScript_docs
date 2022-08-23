@@ -37,3 +37,19 @@
     5. `for.js` 반복문 for
 
     6. `while.js` 반복문 while
+
+4. **Function**
+
+    1. `basic.js` 함수 선언문
+
+    2. `memory.js` 함수 메모리
+
+    3. `return.js` 함수 리턴 undefined
+
+    4. `parameters.js` 함수 파라미터 `...numbers`
+
+    5. `expression.js` 함수 표현식 `const name = function() {}` / `const name = (a, b) => a * b;`
+
+    6. `callback.js` 콜백 함수 `function name(a, b, action) { }`
+
+    7. `functionQuize` 함수를 사용한 예제
