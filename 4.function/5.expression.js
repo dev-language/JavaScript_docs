@@ -22,5 +22,5 @@ console.log(sum(1, 2)); //3
 /** IIFE(Immediately-Invoked Function Expressions) 함수를 정의하면서 바로 호출하고 싶을때 사용한다. */
 // 많이 사용 되지는 않음
 (function hello() {
-    console.log('안녕 ⭐️');
+    console.log('안녕!');
 })();
