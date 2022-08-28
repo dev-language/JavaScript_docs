@@ -17,7 +17,7 @@ let sum = (a, b) => a + b;
 
 console.log(sum(1, 2)); //3
 
-/** 생성자 함수 const object = new Function();  객체편에서 다룸*/
+/** 생성자 함수 const object = new Function();  //5.object 5. create 에서 자세하게 다룸
 
 /** IIFE(Immediately-Invoked Function Expressions) 함수를 정의하면서 바로 호출하고 싶을때 사용한다. */
 // 많이 사용 되지는 않음
