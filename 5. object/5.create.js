@@ -22,11 +22,11 @@
 
 // 예제 1
 function Idcard(name, title) {
-    (this.name = name),
-        (this.title = title),
-        (this.display = () => {
-            console.log(`${this.name}: ${this.title})`);
-        });
+    this.name = name;
+    this.title = title;
+    this.display = () => {
+        console.log(`${this.name}: ${this.title}`);
+    };
 }
 
 const newIdCard = new Idcard('서근', '서근 개발노트');
@@ -36,7 +36,8 @@ console.log(newIdCard2);
 
 // 예제 2
 function Samsung(product, price) {
-    (this.product = product), (this.price = price);
+    this.product = product;
+    this.price = price;
 }
 
 const galaxy22 = new Samsung('갤럭시 22', '100만원');
