@@ -29,6 +29,7 @@ class IdCard {
     };
 }
 
+// newIdCard는 IdCard의 인스턴스 이다.
 const newIdCard = new IdCard('서근', '서근 개발노트');
 const newIdCard2 = new IdCard('미진', '미진 개발노트');
 console.log(newIdCard);
