@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button class="myBtn1">클릭 이벤트1</button>
+
+        <input type="button" id="target1" value="클릭 이벤트2" />
+
+        <input type="button" id="target2" value="클릭 이벤트3" />
+
+        <input type="button" id="target3" value="클릭 이벤트4" />
+        <input type="button" id="target4" value="클릭 이벤트5" />
+        <script>
+            /*==1==*/
+            document.querySelector('.myBtn1').addEventListener('click', function () {
+                alert('Hello World!');
+            });
+
+            /*==2==*/
+            var t = document.getElementById('target1');
+            t.addEventListener('click', function (event) {
+                alert('Hello world, ' + event.target.value);
+            });
+
+            /*==3==*/
+            var t = document.getElementById('target2');
+            t.addEventListener('click', function (event) {
+                alert('Hello world, ' + event.target.value);
+            });
+
+            t.addEventListener('click', function (event) {
+                alert('서근 개발노트, ' + event.target.value);
+            });
+
+            /*==4==*/
+            var t1 = document.getElementById('target3');
+            var t2 = document.getElementById('target4');
+
+            function btn_listener(event) {
+                switch (event.target.id) {
+                    case 'target3':
+                        alert(1);
+                        break;
+                    case 'target4':
+                        alert(2);
+                        break;
+                }
+            }
+            t1.addEventListener('click', btn_listener);
+            t2.addEventListener('click', btn_listener);
+        </script>
+    </body>
+</html>
