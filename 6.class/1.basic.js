@@ -35,3 +35,16 @@ const newIdCard2 = new IdCard('미진', '미진 개발노트');
 console.log(newIdCard);
 console.log(newIdCard2);
 console.log(newIdCard.display());
+
+class Samsung {
+    constructor(name, version) {
+        this.name = name;
+        this.version = version;
+    }
+    display = () => {
+        console.log(`${this.name} ${this.version}`);
+    };
+}
+
+const s22 = new Samsung('갤럭시', 's22');
+console.log(s22.display());

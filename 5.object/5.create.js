@@ -1,3 +1,5 @@
+//생성자 함수
+
 // const idCard = {
 //     name: '서근',
 //     display: function () {
@@ -33,6 +35,7 @@ const newIdCard = new Idcard('서근', '서근 개발노트');
 const newIdCard2 = new Idcard('미진', '미진 개발노트');
 console.log(newIdCard);
 console.log(newIdCard2);
+console.log(newIdCard.display());
 
 // 예제 2
 function Samsung(product, price) {
