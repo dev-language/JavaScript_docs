@@ -12,7 +12,7 @@
 //     console.log(num);
 // }
 // const myAge = 20;
-// console.log(myAge); //20
+// console.log(myAge); //20 
 
 // 그런데 여기서 함수 내부에 외부로 부터 주어진 인자값을 변경한다면?
 
@@ -23,6 +23,7 @@ function age(num) {
 const myAge = 20;
 age(myAge); //12
 console.log(myAge); //20
+
 //12가 출력되는것을 볼 수 있다. 이유는
 /* 
 myAge가 age함수로 메모리 주소가 전달이 되고 출력이 시작되면서 num은 12로 재지정 되므로 myAge는 12가 된다.

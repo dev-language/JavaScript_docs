@@ -10,4 +10,13 @@ function makeobj(name, age) {
         age,
     };
 }
+
+function makeobj2(x, y) {
+    return {
+        x,
+        y,
+    };
+}
+
+console.log(makeobj2('선중', '블로그'));
 console.log(makeobj('서근', 20));
