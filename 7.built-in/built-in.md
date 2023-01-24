@@ -1,8 +1,7 @@
 # 빌트인 내장 객체
 
 [한국어 버전 참고서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference)
-
-![CleanShot 2023-01-24 at 09 02 33](https://user-images.githubusercontent.com/76584961/214179753-0e4f1472-4a2e-4c4d-aa55-23b410a82fe3.png)
+![CleanShot 2023-01-24 at 09 02 33](https://user-images.githubusercontent.com/76584961/214181418-0422d3cb-fa96-45f4-92e4-382197259080.png)
 
 ## 1. 래퍼 객체 (Warpper Object)
 
