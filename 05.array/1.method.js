@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 /**
 * 배열 메소드 종류
 
@@ -278,3 +280,80 @@ console.log('typeOf --->', typeof someArray); // object
 
 console.log('Array.isArray() --->', Array.isArray(someObject)); // false
 console.log('Array.isArray() --->', Array.isArray(someArray)); // true
+
+/* ======= sort ======= */
+
+/**
+*
+sort(fn): 배열을 재 정렬 한다. 배열 자체가 변경된다.
+*/
+
+let sort1 = [1, 5, 6, 2, 3];
+sort1.sort();
+console.log('sort1 --->', sort1); // [ 1, 2, 3, 5, 6 ]
+
+let sort2 = [11, 2, 33, 2, 3, 5];
+sort2.sort((a, b) => a - b);
+console.log('sort2 --->', sort2);
+
+let sort3 = ['가', '나', '바', '다', '하', '바', '타', '마'];
+const sortedArray = _.uniq(_.sortBy(sort3)); // 중복제거 및 정렬
+console.log('sortedArray --->', sortedArray);
+
+/* ======= reduce ======= */
+
+/**
+*
+reduce((누적 값, 현재값) => { return 계산값 }, n)
+reduce((prev, cur) => {}, n)
+*/
+
+let reduce1 = [1, 2, 3, 4, 5];
+
+let forEach_result = 0;
+const reduce1_forEach = reduce1.forEach(number => (forEach_result += number));
+console.log('forEach_result --->', forEach_result); // 15
+
+const reduce1_result = reduce1.reduce((v, i) => {
+  return v + i;
+}, 0);
+console.log('reduce1_result --->', reduce1_result); //15
+
+let reduce2 = [
+  {
+    name: '선중',
+    age: 28,
+  },
+  {
+    name: '미진',
+    age: 21,
+  },
+  {
+    name: '희진',
+    age: 31,
+  },
+];
+
+let reduce2_result = reduce2.reduce((prev, cur) => {
+  if (cur.age > 25) {
+    prev.push(cur.name);
+  }
+  return prev;
+}, []);
+
+console.log('reduce2_result --->', reduce2_result); //[ '선중', '희진' ]
+
+let reduce2_result2 = reduce2.reduce((prev, cur) => {
+  return (prev += cur.age);
+}, 0);
+
+console.log('reduce2_result2 --->', reduce2_result2); // 80
+
+let reduce2_result3 = reduce2.reduce((prev, cur) => {
+  if (cur.name.includes('진')) {
+    prev.push(cur.name);
+  }
+  return prev;
+}, []);
+
+console.log('reduce2_result3 --->', reduce2_result3);
